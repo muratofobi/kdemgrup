@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(gallery/KDEM_LOGO_arkaplan2.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: opacity(0.7);
+    z-index: -1;
+}
+
+.container {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.logo_form{
+    height: 200px;
+    width: 200px;
+    padding-left: 25%;
+}
+
+/*animasyon*/
+
+.logo_start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logoAnimation 2s ease-in-out forwards;
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.container {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/*
+
+body{
+    width: 1920px;
+    height: 1080px;
+}
+iframe {
+    width: 1920px;
+    height: 1080px;
+}
+
+
+@media (max-width: 991px){
+    iframe {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+@media (max-width: 767px){
+    iframe {
+        max-width: 767px;
+        max-height: 1080px;
+    }
+    body{
+        max-width: 767px;
+        max-height: 1080px;
+    }
+}
+
+ */
