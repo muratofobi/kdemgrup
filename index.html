@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<!--
 <div class="logo_start">
     <img src="gallery/KDEM_LOGO_yeni.png" height="1563" width="1563" alt="Logo">
 </div>
+-->
 
-<div class="logo_background"></div>
+<div class="logo_background">
+<img src="gallery/KDEM_LOGO_arkaplan2.jpeg" height="1080" width="1920"/>
+</div>
 
 <div class="container">
     <div class="logo_form">
     <img id="logo" src="gallery/KDEM_LOGO_yeni.png" width="200"/>
     </div>
-<form action="https://formsubmit.co/kdemgrup@gmail.com" method="POST">
+<form id="myForm" action="https://formsubmit.co/kdemgrup@gmail.com" method="POST">
     <h1>KDEMGRUP Başvuru Formu</h1>
     <p>Formu Bitirmek İçin "Gönder" Butonuna Basınız.</p>
-    <form action="#" method="POST">
+
         <label for="name">Adınız:</label>
         <input type="text" id="name" name="name" required>
 
@@ -49,7 +52,7 @@
         <label for="xp">Varsa Deneyim/Özgeçmiş:</label>
         <textarea type="text" id="xp" name="xp" rows="4"></textarea>
 
-        <button type="submit"; formtarget="mailto:">Gönder</button>
+        <button type="submit">Gönder</button>
     </form>
 </div>
 <script src="script.js"></script>
