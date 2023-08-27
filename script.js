@@ -20,6 +20,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
     if (name && surname && birth && gender && days && city && number && email) { // gerekli alanları doldurulmuşsa
         // Popup mesajını göster
+        window.location.href = "https://formsubmit.co/6bfc72d7e5757986849a8d5d95b90399";
         alert("Formunuz Başarılı Şekilde Gönderildi!");
         form.reset(); // Formu sıfırla
     } else {
